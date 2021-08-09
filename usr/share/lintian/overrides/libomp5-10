@@ -1,0 +1,1 @@
+libomp5-10: arch-dependent-file-not-in-arch-specific-directory usr/lib/llvm-10/lib/libomp.so.5

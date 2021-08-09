@@ -1,0 +1,9 @@
+# poppler >= 0.62 is necessary for building TeX Live
+# As soon as poppler is updated in unstable the system library will
+# be used for compilation.
+texlive-binaries binary: embedded-library usr/bin/pdftex: poppler
+texlive-binaries binary: embedded-library usr/bin/pdftosrc: poppler
+texlive-binaries binary: embedded-library usr/bin/xetex: poppler
+texlive-binaries binary: embedded-library usr/bin/luajittex: poppler
+texlive-binaries binary: embedded-library usr/bin/luatex: poppler
+texlive-binaries binary: embedded-library usr/bin/luatex53: poppler

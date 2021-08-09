@@ -1,0 +1,5 @@
+# I know and I am not planning to change that yet.
+libclang1-10: package-name-doesnt-match-sonames libclang-10-1
+# Provided as transition
+libclang1-10: dev-pkg-without-shlib-symlink usr/lib/*/libclang-10.so.1 usr/lib/*/libclang.so
+libclang1-10: ldconfig-symlink-missing-for-shlib usr/lib/*/libclang-LLVM_VERSION@.so usr/lib/*/libclang-LLVM_VERSION@.so.1 libclang-LLVM_VERSION@.so

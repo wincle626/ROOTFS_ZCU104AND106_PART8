@@ -1,0 +1,6 @@
+texlive-latex-extra: license-problem-font-adobe-copyrighted-fragment-no-credit
+texlive-latex-extra: license-problem-font-adobe-copyrighted-fragment
+texlive-latex-extra: zero-byte-file-in-doc-directory
+texlive-latex-extra: extra-license-file
+texlive-latex-extra: script-not-executable
+texlive-latex-extra: wrong-name-for-upstream-changelog

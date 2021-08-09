@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GMemoryMonitor: GIO Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GIO Reference Manual">
+<link rel="up" href="application.html" title="Application support">
+<link rel="prev" href="GDBusActionGroup.html" title="GDBusActionGroup">
+<link rel="next" href="GMenuModel.html" title="GMenuModel">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GMemoryMonitor.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GMemoryMonitor.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_prerequisites">  <span class="dim">|</span> 
+                  <a href="#GMemoryMonitor.prerequisites" class="shortcut">Prerequisites</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#GMemoryMonitor.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="application.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GDBusActionGroup.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GMenuModel.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GMemoryMonitor"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GMemoryMonitor.top_of_page"></a>GMemoryMonitor</span></h2>
+<p>GMemoryMonitor — Memory usage monitor</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GMemoryMonitor.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="function_type">
+<a class="link" href="GMemoryMonitor.html" title="GMemoryMonitor"><span class="returnvalue">GMemoryMonitor</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GMemoryMonitor.html#g-memory-monitor-dup-default" title="g_memory_monitor_dup_default ()">g_memory_monitor_dup_default</a> <span class="c_punctuation">()</span>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GMemoryMonitor.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GMemoryMonitor.html#GMemoryMonitor-low-memory-warning" title="The “low-memory-warning” signal">low-memory-warning</a></td>
+<td class="signal_flags">Run Last</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GMemoryMonitor.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GMemoryMonitor.html#GMemoryMonitor-struct" title="GMemoryMonitor">GMemoryMonitor</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GMemoryMonitor.html#GMemoryMonitorInterface" title="struct GMemoryMonitorInterface">GMemoryMonitorInterface</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="GMemoryMonitor.html#GMemoryMonitorWarningLevel" title="enum GMemoryMonitorWarningLevel">GMemoryMonitorWarningLevel</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="GMemoryMonitor.html#G-MEMORY-MONITOR-EXTENSION-POINT-NAME:CAPS" title="G_MEMORY_MONITOR_EXTENSION_POINT_NAME">G_MEMORY_MONITOR_EXTENSION_POINT_NAME</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GMemoryMonitor.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    GEnum
+    <span class="lineart">╰──</span> GMemoryMonitorWarningLevel
+    GInterface
+    <span class="lineart">╰──</span> GMemoryMonitor
+</pre>
+</div>
+<div class="refsect1">
+<a name="GMemoryMonitor.prerequisites"></a><h2>Prerequisites</h2>
+<p>
+GMemoryMonitor requires
+ <a class="link" href="GInitable.html" title="GInitable">GInitable</a> and  GObject.</p>
+</div>
+<div class="refsect1">
+<a name="GMemoryMonitor.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gio/gio.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GMemoryMonitor.description"></a><h2>Description</h2>
+<p><a class="link" href="GMemoryMonitor.html" title="GMemoryMonitor"><span class="type">GMemoryMonitor</span></a> will monitor system memory and suggest to the application
+when to free memory so as to leave more room for other applications.
+It is implemented on Linux using the <a class="ulink" href="https://gitlab.freedesktop.org/hadess/low-memory-monitor/" target="_top">Low Memory Monitor</a>
+(<a class="ulink" href="https://hadess.pages.freedesktop.org/low-memory-monitor/" target="_top">API documentation</a>).</p>
+<p>There is also an implementation for use inside Flatpak sandboxes.</p>
+<p>Possible actions to take when the signal is received are:</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>Free caches</p></li>
+<li class="listitem"><p>Save files that haven't been looked at in a while to disk, ready to be reopened when needed</p></li>
+<li class="listitem"><p>Run a garbage collection cycle</p></li>
+<li class="listitem"><p>Try and compress fragmented allocations</p></li>
+<li class="listitem"><p>Exit on idle if the process has no reason to stay around</p></li>
+</ul></div>
+<p>See <a class="link" href="GMemoryMonitor.html#GMemoryMonitorWarningLevel" title="enum GMemoryMonitorWarningLevel"><span class="type">GMemoryMonitorWarningLevel</span></a> for details on the various warning levels.</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="k">static</span> <span class="kt">void</span>
+<span class="nf">warning_cb</span> <span class="p">(</span><span class="n">GMemoryMonitor</span> <span class="o">*</span><span class="n">m</span><span class="p">,</span> <span class="n">GMemoryMonitorWarningLevel</span> <span class="n">level</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">g_debug</span> <span class="p">(</span><span class="s">&quot;Warning level: %d&quot;</span><span class="p">,</span> <span class="n">level</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">warning_level</span> <span class="o">&gt;</span> <span class="n">G_MEMORY_MONITOR_WARNING_LEVEL_LOW</span><span class="p">)</span>
+    <span class="n">drop_caches</span> <span class="p">();</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="n">GMemoryMonitor</span> <span class="o">*</span>
+<span class="nf">monitor_low_memory</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">GMemoryMonitor</span> <span class="o">*</span><span class="n">m</span><span class="p">;</span>
+  <span class="n">m</span> <span class="o">=</span> <span class="n">g_memory_monitor_dup_default</span> <span class="p">();</span>
+  <span class="n">g_signal_connect</span> <span class="p">(</span><span class="n">G_OBJECT</span> <span class="p">(</span><span class="n">m</span><span class="p">),</span> <span class="s">&quot;low-memory-warning&quot;</span><span class="p">,</span>
+                    <span class="n">G_CALLBACK</span> <span class="p">(</span><span class="n">warning_cb</span><span class="p">),</span> <span class="nb">NULL</span><span class="p">);</span>
+  <span class="k">return</span> <span class="n">m</span><span class="p">;</span>
+<span class="p">}</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+<p>Don't forget to disconnect the <a class="link" href="GMemoryMonitor.html#GMemoryMonitor-low-memory-warning" title="The “low-memory-warning” signal"><span class="type">“low-memory-warning”</span></a>
+signal, and unref the <a class="link" href="GMemoryMonitor.html" title="GMemoryMonitor"><span class="type">GMemoryMonitor</span></a> itself when exiting.</p>
+</div>
+<div class="refsect1">
+<a name="GMemoryMonitor.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="g-memory-monitor-dup-default"></a><h3>g_memory_monitor_dup_default ()</h3>
+<pre class="programlisting"><a class="link" href="GMemoryMonitor.html" title="GMemoryMonitor"><span class="returnvalue">GMemoryMonitor</span></a> *
+g_memory_monitor_dup_default (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Gets a reference to the default <a class="link" href="GMemoryMonitor.html" title="GMemoryMonitor"><span class="type">GMemoryMonitor</span></a> for the system.</p>
+<div class="refsect3">
+<a name="g-memory-monitor-dup-default.returns"></a><h4>Returns</h4>
+<p>a new reference to the default <a class="link" href="GMemoryMonitor.html" title="GMemoryMonitor"><span class="type">GMemoryMonitor</span></a>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-64.html#api-index-2.64">2.64</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GMemoryMonitor.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GMemoryMonitor-struct"></a><h3>GMemoryMonitor</h3>
+<pre class="programlisting">typedef struct _GMemoryMonitor GMemoryMonitor;</pre>
+<p><a class="link" href="GMemoryMonitor.html" title="GMemoryMonitor"><span class="type">GMemoryMonitor</span></a> monitors system memory and indicates when
+the system is low on memory.</p>
+<p class="since">Since: <a class="link" href="api-index-2-64.html#api-index-2.64">2.64</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GMemoryMonitorInterface"></a><h3>struct GMemoryMonitorInterface</h3>
+<pre class="programlisting">struct GMemoryMonitorInterface {
+  void     (*low_memory_warning)  (GMemoryMonitor             *monitor,
+                                   GMemoryMonitorWarningLevel  level);
+};
+</pre>
+<p>The virtual function table for <a class="link" href="GMemoryMonitor.html" title="GMemoryMonitor"><span class="type">GMemoryMonitor</span></a>.</p>
+<div class="refsect3">
+<a name="GMemoryMonitorInterface.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody><tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GMemoryMonitorInterface.low-memory-warning"></a>low_memory_warning</code></em> ()</p></td>
+<td class="struct_member_description"><p>the virtual function pointer for the
+<a class="link" href="GMemoryMonitor.html#GMemoryMonitor-low-memory-warning" title="The “low-memory-warning” signal"><span class="type">“low-memory-warning”</span></a> signal.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-64.html#api-index-2.64">2.64</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GMemoryMonitorWarningLevel"></a><h3>enum GMemoryMonitorWarningLevel</h3>
+<p>Memory availability warning levels.</p>
+<p>Note that because new values might be added, it is recommended that applications check
+<a class="link" href="GMemoryMonitor.html#GMemoryMonitorWarningLevel" title="enum GMemoryMonitorWarningLevel"><span class="type">GMemoryMonitorWarningLevel</span></a> as ranges, for example:</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="k">if</span> <span class="p">(</span><span class="n">warning_level</span> <span class="o">&gt;</span> <span class="n">G_MEMORY_MONITOR_WARNING_LEVEL_LOW</span><span class="p">)</span>
+  <span class="n">drop_caches</span> <span class="p">();</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+<div class="refsect3">
+<a name="GMemoryMonitorWarningLevel.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="G-MEMORY-MONITOR-WARNING-LEVEL-LOW:CAPS"></a>G_MEMORY_MONITOR_WARNING_LEVEL_LOW</p></td>
+<td class="enum_member_description">
+<p>Memory on the device is low, processes
+should free up unneeded resources (for example, in-memory caches) so they can
+be used elsewhere.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="G-MEMORY-MONITOR-WARNING-LEVEL-MEDIUM:CAPS"></a>G_MEMORY_MONITOR_WARNING_LEVEL_MEDIUM</p></td>
+<td class="enum_member_description">
+<p>Same as <em class="parameter"><code>G_MEMORY_MONITOR_WARNING_LEVEL_LOW</code></em>
+
+but the device has even less free memory, so processes should try harder to free
+up unneeded resources. If your process does not need to stay running, it is a
+good time for it to quit.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="G-MEMORY-MONITOR-WARNING-LEVEL-CRITICAL:CAPS"></a>G_MEMORY_MONITOR_WARNING_LEVEL_CRITICAL</p></td>
+<td class="enum_member_description">
+<p>The system will soon start terminating
+processes to reclaim memory, including background processes.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-64.html#api-index-2.64">2.64</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="G-MEMORY-MONITOR-EXTENSION-POINT-NAME:CAPS"></a><h3>G_MEMORY_MONITOR_EXTENSION_POINT_NAME</h3>
+<pre class="programlisting">#define G_MEMORY_MONITOR_EXTENSION_POINT_NAME "gio-memory-monitor"
+</pre>
+<p>Extension point for memory usage monitoring functionality.
+See Extending GIO.</p>
+<p class="since">Since: <a class="link" href="api-index-2-64.html#api-index-2.64">2.64</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GMemoryMonitor.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GMemoryMonitor-low-memory-warning"></a><h3>The <code class="literal">“low-memory-warning”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GMemoryMonitor.html" title="GMemoryMonitor"><span class="type">GMemoryMonitor</span></a>            *monitor,
+               <a class="link" href="GMemoryMonitor.html#GMemoryMonitorWarningLevel" title="enum GMemoryMonitorWarningLevel"><span class="type">GMemoryMonitorWarningLevel</span></a> level,
+               <span class="type">gpointer</span>                   user_data)</pre>
+<p>Emitted when the system is running low on free memory. The signal
+handler should then take the appropriate action depending on the
+warning level. See the <a class="link" href="GMemoryMonitor.html#GMemoryMonitorWarningLevel" title="enum GMemoryMonitorWarningLevel"><span class="type">GMemoryMonitorWarningLevel</span></a> documentation for
+details.</p>
+<div class="refsect3">
+<a name="GMemoryMonitor-low-memory-warning.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>monitor</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GMemoryMonitor.html" title="GMemoryMonitor"><span class="type">GMemoryMonitor</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>level</p></td>
+<td class="parameter_description"><p>the <a class="link" href="GMemoryMonitor.html#GMemoryMonitorWarningLevel" title="enum GMemoryMonitorWarningLevel"><span class="type">GMemoryMonitorWarningLevel</span></a> warning level</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+<p class="since">Since: <a class="link" href="api-index-2-64.html#api-index-2.64">2.64</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.32</div>
+</body>
+</html>

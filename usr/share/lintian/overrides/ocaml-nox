@@ -1,0 +1,7 @@
+ocaml-nox: script-not-executable usr/lib/ocaml/camlheader
+ocaml-nox: script-not-executable usr/lib/ocaml/target_camlheaderd
+ocaml-nox: script-not-executable usr/lib/ocaml/target_camlheaderi
+ocaml-nox: unusual-interpreter usr/lib/ocaml/target_camlheaderd #!/usr/bin/ocamlrund
+ocaml-nox: unusual-interpreter usr/lib/ocaml/target_camlheaderi #!/usr/bin/ocamlruni
+ocaml-nox: binary-without-manpage usr/bin/ocaml*.byte
+ocaml-nox: binary-without-manpage usr/bin/ocaml*.opt

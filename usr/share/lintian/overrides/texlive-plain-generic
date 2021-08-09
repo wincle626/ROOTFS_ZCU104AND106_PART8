@@ -1,0 +1,6 @@
+texlive-plain-generic: license-problem-font-adobe-copyrighted-fragment-no-credit
+texlive-plain-generic: license-problem-font-adobe-copyrighted-fragment
+texlive-plain-generic: zero-byte-file-in-doc-directory
+texlive-plain-generic: extra-license-file
+texlive-plain-generic: script-not-executable
+texlive-plain-generic: wrong-name-for-upstream-changelog

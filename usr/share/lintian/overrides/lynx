@@ -1,0 +1,7 @@
+# While this isn't a false positive, "XWINDOWS" can be the value or
+# name of an environment variable and we don't want to change Lynx's
+# user interface to become incompatible with upstream respectively
+# previous versions in Debian, so we ignore this specific case of a
+# misspelled project name.
+
+lynx: spelling-error-in-binary usr/bin/lynx XWINDOWS X

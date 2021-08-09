@@ -1,0 +1,7 @@
+# Ignore all man page issues, they're far too many to track them down
+# or report to upstream. Many of them seem to be false positives
+# anyways.
+freebsd-manpages: spelling-error-in-manpage *
+freebsd-manpages: manpage-has-errors-from-man *
+freebsd-manpages: manpage-has-bad-whatis-entry *
+freebsd-manpages: manpage-section-mismatch *

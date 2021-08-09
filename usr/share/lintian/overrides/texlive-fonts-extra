@@ -1,0 +1,6 @@
+texlive-fonts-extra: license-problem-font-adobe-copyrighted-fragment-no-credit
+texlive-fonts-extra: license-problem-font-adobe-copyrighted-fragment
+texlive-fonts-extra: zero-byte-file-in-doc-directory
+texlive-fonts-extra: extra-license-file
+texlive-fonts-extra: script-not-executable
+texlive-fonts-extra: wrong-name-for-upstream-changelog
